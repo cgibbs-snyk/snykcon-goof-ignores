@@ -1,0 +1,29 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-CC-TF-74:
+    - '*':
+        reason: Test A
+        created: 2022-11-18T14:36:17.510Z
+  SNYK-CC-TF-11:
+    - 'main.tf > *':
+        reason: Test B
+        created: 2022-11-18T14:36:17.510Z
+  SNYK-CC-TF-95:
+    - '*':
+        reason: Test 1
+        created: 2022-11-18T14:36:17.510Z
+  SNYK-CC-TF-96:
+    - 'modules/storage/main.tf > *':
+        reason: Test 2
+        created: 2022-11-18T14:36:17.510Z
+  SNYK-CC-TF-97:
+    - 'modules/storage/main.tf > *':
+        reason: Test 3
+        created: 2022-11-18T14:36:17.510Z
+  SNYK-JS-QS-3153490:
+    - '*':
+        reason: None Given
+        created: 2022-12-06T10:48:51.830Z
+patch: {}
